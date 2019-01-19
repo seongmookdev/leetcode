@@ -42,6 +42,8 @@ Return the element repeated `N` times.
     a = Solution()
     print(a.repeatedNTimes(d))
 
+---
+
     class Solution:
         def repeatedNTimes(self, A):
             """
