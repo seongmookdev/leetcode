@@ -25,9 +25,8 @@ Given a non-negative integer `num`, repeatedly add all its digits until the res
             """
             if num == 0:
                 return 0
-            else:
-                for i in range(0,len(num)):
-                    print(num[i])
+			else:
+                return (num-1)%9 + 1
             
     if __name__ == '__main__':
         s = Solution()
