@@ -24,7 +24,7 @@ Count the number of prime numbers less than a non-negative number, **n**.
             print(a)
             primes = []
                  
-            for i in range(2,n+1):
+            for i in range(2,n):
                 print('i:',i)
                 if a[i]:
                     primes.append(i)
