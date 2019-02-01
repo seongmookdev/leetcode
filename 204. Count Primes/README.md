@@ -15,25 +15,21 @@ Count the number of prime numbers less than a non-negative number, **n**.
 # Solution
 
     class Solution:
-        def is_prime_bad(self, n):
+        def countPrime(self, n):
             """
             :type n: int
             :rtype: int
             """
             a = [False, False] + [True]*(n-1)
-            print(a)
-            primes = []
-                 
+            primes = []           
             for i in range(2,n):
-                print('i:',i)
                 if a[i]:
                     primes.append(i)
                 for j in range(2*i, n+1, i):
-                    print('j:',j)
                     a[j] = False
             return len(primes)
             
     if __name__ == '__main__':
         s = Solution()
-        n = 15
-        s.is_prime_bad(n)
+        n = 10
+        print(s.countPrime(n))
